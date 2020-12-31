@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "sesei": {
+    "sensei": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/sesei",
+            "outputPath": "dist/sensei",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -61,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "sesei:build"
+            "browserTarget": "sensei:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "sesei:build:production"
+              "browserTarget": "sensei:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "sesei:build"
+            "browserTarget": "sensei:build"
           }
         },
         "test": {
@@ -109,16 +109,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "sesei:serve"
+            "devServerTarget": "sensei:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "sesei:serve:production"
+              "devServerTarget": "sensei:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "sesei"
+  "defaultProject": "sensei"
 }
